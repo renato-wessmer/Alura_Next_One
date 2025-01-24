@@ -1,50 +1,15 @@
-/* 1) Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!".*/
+alert('Boas-vindas ao jogo do Número Secreto'); /* Cria uma caixa de exibição da mensagen de boas vindas ao usuário */
 
-let dayOfTheWeek = promt('Qual é o dia da semana?');
-console.log('Dia escolhido', dayOfTheWeek);
+let numberSecret = 8; /* variável que armazena o número secreto */
+console.log(numberSecret);
 
-if (dayOfTheWeek == 'Sábado') {
-    alert('Bom fim de semana!');
-} else if (dayOfTheWeek == 'Domingo') {
-    alert('Bom final de semana!');
+let numberChosen = prompt('Escolha um número entre 1 e 10'); /* variável para armazenar o número escolhido pelo jogador junto com a função de criar uma caixa de texto onde a pessoa pode escrever o número que acha ser o correto */
+console.log('Valor do número escolhido', numberChosen);
+console.log('Resultado da comparação', numberChosen == numberSecret);
+
+if (numberChosen == numberSecret) { /* If é a condicional que compara se numberChosen é igual ao numberSecret  */
+    alert(`Isso aí! você descobriu o número secreto ${numberSecret}` /* ` ${}` esse formato é utilizado para trazer o valor da várivael de forma automática sem precisar mudar a cada ciclo*/); /* O console.log serve para verificarmos a execução do condicional no nosso projeto dentro do navegador web */
 } else {
-    alert('Boa semana!');
+    console.log('Valor do número secreto:', numberSecret);
+    alert('Você errou :( o número secreto era ' + numberSecret)
 }
-    
-/* 2) Verifique se um número digitado pelo usuário é positivo ou negativo. Mostre um alerta informando. */
-
-let chosenNumber = promp('Escolha um número positivo ou negativo');
-
-if (chosenNumber > 0) {
-    alert('O número' + chosenNumber + 'digitado é positivo');
-} else {
-    alert('O número' + chosenNumber + 'digitado é negativo');
-}
-
-/* 3) Crie um sistema de pontuação para um jogo. Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!". Caso contrário, mostre "Tente novamente para ganhar.". */
-
-let chosenScore = 150
-
-if (chosenScore >= 100) {
-    alert('Parabéns, você venceu!');
-} else {
-    alert('Tente novamente para ganhar.')
-}
-
-/* 4) Crie uma mensagem que informa o usuário sobre o saldo da conta, usando uma template string para incluir o valor do saldo. */
-
-let amountInTheAccount = 5000;
-
-let withdraw = prompt('Digite um valor a sacar!');
-
-withdraw = amountInTheAccount - withdraw;
-
-alert(`O saldo na conta é: ${withdraw}`);
-
-/* 5) Peça ao usuário para inserir seu nome usando prompt. Em seguida, mostre um alerta de boas-vindas usando esse nome. */
-
-let yourName = prompt('Digite seu nome');
-
-alert(`Boas-vindas ${yourName}`);
-
-
