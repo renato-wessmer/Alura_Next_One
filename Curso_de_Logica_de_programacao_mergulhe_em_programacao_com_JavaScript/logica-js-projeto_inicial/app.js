@@ -13,8 +13,7 @@ while (numberChosen != numberSecret) { /* Laço de repetião que será executado
     console.log('Resultado da comparação', numberChosen == numberSecret);
 
     if (numberChosen == numberSecret) { /* If é a condicional que compara se numberChosen é igual ao numberSecret  */
-        alert(`Isso aí! você descobriu o número secreto ${numberSecret} com ${attempts} tentativas`); /* ` ${}` esse formato é utilizado para trazer o valor da várivael de forma automática sem precisar mudar a cada ciclo*/
-        /* O console.log serve para verificarmos a execução do condicional no nosso projeto dentro do navegador web */
+        break; /* Faz com que a parte do código abaixo dentro do while seja ignorado, exibindo diretamente o último alert do código. */ 
     } else {
         if (numberChosen > numberSecret) {
             alert(`O número secreto é menor que ${numberChosen}`);
@@ -25,5 +24,9 @@ while (numberChosen != numberSecret) { /* Laço de repetião que será executado
     }
 }
 
-
-
+if (attempts >1) {
+    alert(`Isso aí! você descobriu o número secreto ${numberSecret} com ${attempts} tentativas.`); /* ` ${}` esse formato é utilizado para trazer o valor da várivael de forma automática sem precisar mudar a cada ciclo*/
+} else {
+    alert(`Isso aí! você descobriu o número secreto ${numberSecret} com ${attempts} tentativa.`);
+}
+  
