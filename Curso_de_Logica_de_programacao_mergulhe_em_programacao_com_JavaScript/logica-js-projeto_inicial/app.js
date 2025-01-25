@@ -24,9 +24,7 @@ while (numberChosen != numberSecret) { /* Laço de repetião que será executado
     }
 }
 
-if (attempts >1) {
-    alert(`Isso aí! você descobriu o número secreto ${numberSecret} com ${attempts} tentativas.`); /* ` ${}` esse formato é utilizado para trazer o valor da várivael de forma automática sem precisar mudar a cada ciclo*/
-} else {
-    alert(`Isso aí! você descobriu o número secreto ${numberSecret} com ${attempts} tentativa.`);
-}
-  
+let wordAttempts = attempts > 1 ? 'tentativas' : 'tentativa'; /* Este recurso é um operador ternário */
+
+alert(`Isso aí! você descobriu o número secreto ${numberSecret} com ${attempts} ${wordAttempts}.`); /* ` ${}` esse formato é utilizado para trazer o valor da várivael de forma automática sem precisar mudar a cada ciclo*/
+
