@@ -48,12 +48,62 @@ if (age > 18) {
 
 /* 8) Crie uma variável "numero" e peça um valor com prompt verifique se é positivo, negativo ou zero. Use if-else para imprimir a respectiva mensagem. */
 
+let number = prompt('Digite um número');
+
+if (number > 0) { 
+    alert(`O númeor ${number} digitado é positivo`);
+} else {
+    if (number < 0) {
+        alert(`O número ${number} digitado é negativo`)
+    } else {
+        alert(`O número digitado é zero.`)
+    }
+}
+
+var numberOne = parseFloat(prompt("Digite um número:"));
+
+
+if (numberOne > 0) {
+    console.log("O número é positivo.");
+} else if (numberOne < 0) {
+    console.log("O número é negativo.");
+} else {
+    console.log("O número é zero.");
+}
+
 /* 9) Use um loop while para imprimir os números de 1 a 10 no console. */
+
+let start = 1;
+
+while (start <=10 ) {
+    console.log(start);
+    start ++;
+}
 
 /* 10) Crie uma variável "nota" e atribua um valor numérico a ela. Use if-else para determinar se a nota é maior ou igual a 7 e exiba "Aprovado" ou "Reprovado" no console. */
 
+let score = 8; /* Substitua pelo valor da nota que deseja testar */
+
+if (score > 7 ) {
+    console.log('Aprovado');
+} else {
+    console.log('Reprovado');
+}
+
 /* 11) Use o Math.random para gerar qualquer número aleatório e exiba esse número no console. */
+
+let randomNumber = Math.random();
+
+console.log(randomNumber);
 
 /* 12) Use o Math.random para gerar um número inteiro entre 1 e 10 e exiba esse número no console. */
 
+let randomNumberOne = parseInt(Math.random() * 10 +1);
+
+console.log(randomNumberOne);
+
 /* 13) Use o Math.random para gerar um número inteiro entre 1 e 1000 e exiba esse número no console. */
+
+let randomNumberTwo = parseInt(Math.random() *100 +1);
+
+console.log(randomNumberTwo);
