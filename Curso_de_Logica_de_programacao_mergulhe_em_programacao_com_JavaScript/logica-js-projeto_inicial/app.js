@@ -1,6 +1,10 @@
 alert('Boas-vindas ao jogo do Número Secreto'); /* Cria uma caixa de exibição da mensagen de boas vindas ao usuário */
 
-let numberSecret = parseInt(Math.random() * 100 +1); /* variável que armazena o número secreto, duas coisas importantes nessa função: o "M" de “Math” precisa ser em letra maiúscula e o "random" em letra minúscula, o parseInt serve para pegar a parte do número inteiro ignorando a sobra já o Math.random gera pseudos números aleatórios decimal entre 0 (inclusivo) e 1, para que tenhamos valores que vão de 1 a 10, concatenamos a multiplicação por 10 ao valor 1.*/
+let maximumNumber = 10;
+
+let numberSecret = parseInt(Math.random() * maximumNumber +1); /* variável que armazena o número secreto, duas coisas importantes nessa função: o "M" de “Math” precisa ser em letra maiúscula e o "random" em letra minúscula, o parseInt serve para pegar a parte do número inteiro ignorando a sobra já o Math.random gera pseudos números aleatórios decimal entre 0 (inclusivo) e 1, para que tenhamos valores que vão de 1 a 10, concatenamos a multiplicação por 10 ao valor 1.*/
+
+/* Com a nova variável maximumNumber criada se automatizou no texto sem a necessidade de mudança o número máximo da pergunta dentro do lao de repetição e da escolha do número secreto, mudando esse valor do teto. */
 console.log(numberSecret);
 
 let numberChosen;
@@ -8,7 +12,7 @@ let attempts = 1;
 
 while (numberChosen != numberSecret) { /* Laço de repetião que será executado enquanto o número escolhido for diferente do número secreto */    
 
-    numberChosen = prompt('Escolha um número entre 1 e 100'); /* variável para armazenar o número escolhido pelo jogador junto com a função de criar uma caixa de texto onde a pessoa pode escrever o número que acha ser o correto */
+    numberChosen = prompt(`Escolha um número entre 1 e ${maximumNumber}`); /* variável para armazenar o número escolhido pelo jogador junto com a função de criar uma caixa de texto onde a pessoa pode escrever o número que acha ser o correto */
     console.log('Valor do número escolhido', numberChosen);
     console.log('Resultado da comparação', numberChosen == numberSecret);
 
