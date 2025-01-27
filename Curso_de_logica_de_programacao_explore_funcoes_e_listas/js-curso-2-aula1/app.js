@@ -1,6 +1,6 @@
 // let title = document.querySelector('h1'); 
 
-title.innerHTML = 'Jogo número secreto'; /* Comando utilizado para iserir o texto na váriavel que criamos que será expelhado na tag alvo. */
+// title.innerHTML = 'Jogo número secreto'; 
 
 // let paragraph = document.querySelector('p');
 
