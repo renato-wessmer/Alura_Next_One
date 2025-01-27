@@ -7,8 +7,12 @@ function displayTextOnScreen(tag, text) { // Dentro do parênteses se informou o
     field.innerHTML = text;/* Comando utilizado para iserir o texto na váriavel que criamos que será expelhado na tag alvo. */
 }
 
-displayTextOnScreen ('h1', 'Jogo número secreto');
-displayTextOnScreen ('p', 'Escolha um número entre 1 e 10');
+function displayTextOnScreenInitial() {
+    displayTextOnScreen ('h1', 'Jogo número secreto');
+    displayTextOnScreen ('p', 'Escolha um número entre 1 e 10');
+}
+
+displayTextOnScreenInitial();
 
 function checkChoice() {
     let choice = document.querySelector('input').value; // É utilizado value, pois o input do usuário trata-se de um número e não texto
@@ -40,4 +44,12 @@ function generateRandomNumber() {
 function clearField() {
     choice = document.querySelector('input');
     choice.value = ''; 
+}
+
+function restartGame() {
+    numberSecret = generateRandomNumber();
+    clearField ();
+    attempts = 1;
+    displayTextOnScreenInitial()
+    document.getElementById('restart').setAttribute('disabled', true);
 }
