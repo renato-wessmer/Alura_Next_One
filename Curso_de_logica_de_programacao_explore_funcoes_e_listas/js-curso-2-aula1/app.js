@@ -15,5 +15,5 @@ function generateRandomNumber() {
     return parseInt(Math.random() * 10 + 1);
 }
 
-let numberSecret = generateRandomNumber; // Armazena o valor criado pela função.
+let numberSecret = generateRandomNumber(); // Armazena o valor criado pela função.
 
