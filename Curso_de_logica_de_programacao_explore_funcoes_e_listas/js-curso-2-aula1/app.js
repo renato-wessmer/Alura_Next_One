@@ -7,5 +7,13 @@ displayTextOnScreen ('h1', 'Jogo número secreto');
 displayTextOnScreen ('p', 'Escolha um número entre 1 e 10');
 
 function checkChoice() {
-    console.log('O botão foi clicado!');
+    let choice = document.querySelector('input').value; // É utilizado value, pois o input do usuário trata-se de um número e não texto
+    console.log(choice == numberSecret);
 } 
+
+function generateRandomNumber() {
+    return parseInt(Math.random() * 10 + 1);
+}
+
+let numberSecret = generateRandomNumber; // Armazena o valor criado pela função.
+
