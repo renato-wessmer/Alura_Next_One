@@ -1,3 +1,7 @@
+let listOfSortedNumbers = [];
+
+let numberLimit = 10;
+
 let numberSecret = generateRandomNumber(); // Armazena o valor criado pela função.
 
 let attempts = 1;
@@ -38,7 +42,19 @@ function checkChoice() {
 } 
 
 function generateRandomNumber() {
-    return parseInt(Math.random() * 10 + 1);
+    let numberChosen = parseInt(Math.random() * numberLimit + 1);
+
+    let quantityOfElementsOnList = listOfSortedNumbers.length;
+
+    If  (quantityOfElementsOnList == numberLimit) {
+        listOfSortedNumbers = [];
+    }
+    if (listOfSortedNumbers.includes(numberChosen)){
+        return generateRandomNumber(); // Recursão
+    } else {
+        listOfSortedNumbers.push(numberChosen);
+        return numberChosen;
+    }
 }
 
 function clearField() {
@@ -53,3 +69,5 @@ function restartGame() {
     displayTextOnScreenInitial()
     document.getElementById('restart').setAttribute('disabled', true);
 }
+
+
