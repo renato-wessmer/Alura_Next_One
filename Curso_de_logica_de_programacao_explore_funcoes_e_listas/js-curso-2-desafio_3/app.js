@@ -79,22 +79,80 @@ console.log(`${valorEmDolar} dólares equivalem a R$ ${valorEmReais}`);
 
 // Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
 
+let heightRoom = parseFloat(prompt('Qual a altura da sala?'));
 
+let widthRoom = parseFloat(prompt('Qual a largura da sala'));
 
+function areaPerimeter (heightRoom, widthRoom) {
+   let areaRoom = heightRoom * widthRoom;
+   let perimeterRoom = (heightRoom * 2) + (widthRoom * 2);
+   return {
+    area: areaRoom.toFixed(2),
+    perimeter: perimeterRoom.toFixed(2)
+   };
+}
 
+let result = areaPerimeter(heightRoom, widthRoom);
 
+alert(`O valor da área da sala retalgular é ${result.area}, já o valor do perímetro é ${result.perimeter}.`)
+
+// Solução alura
+
+function calcularAreaPerimetroSalaRetangular(altura, largura) {
+    let area = altura * largura;
+    let perimetro = 2 * (altura + largura);
+    
+    console.log(`Área da sala: ${area} metros quadrados`);
+    console.log(`Perímetro da sala: ${perimetro} metros`);
+  }
+  
+  // Exemplo de uso
+  let altura = 3; // em metros
+  let largura = 5; // em metros
+  calcularAreaPerimetroSalaRetangular(altura, largura);
+  
 
 // Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
 
+let radius = parseFloat(prompt('Informe o raio desejado'));
+
+function areaPerimeterCircle (radius) {
+    areaCircle = 3.14 * radius * radius;
+    perimeterCircle = 2 * 3.14 * radius;
+    return {
+        areaC: areaCircle.toFixed(2), perimeterC: perimeterCircle.toFixed(2)
+    };
+}
+
+let resultRadius = areaPerimeterCircle (radius);
+
+prompt(`Com base no raio fornecido a área do circulo é ${resultRadius.areaC} e o seu perimetro é ${resultRadius.perimeterC}.`);
+
+// Solução alura
+
+function calcularAreaPerimetroSalaCircular(raio) {
+    let area = Math.PI * raio * raio;
+    let perimetro = 2 * Math.PI * raio;
+    
+    console.log(`Área da sala circular: ${area.toFixed(2)} metros quadrados`);
+    console.log(`Perímetro da sala circular: ${perimetro.toFixed(2)} metros`);
+  }
+  
+  // Exemplo de uso
+  let raio = 4; // em metros
+  calcularAreaPerimetroSalaCircular(raio);
+
 // Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
 
+// Solução alura
 
-
-
-
-
-// Create a function that shows the area and perimeter of a rectangular room on the screen, using the height and width that will be given as parameters.
-
-// Create a function that shows the area and perimeter of a circular room on the screen, using its radius that will be provided as a parameter. Consider Pi = 3.14.
-
-// Create a function that displays the multiplication table of a number given as a parameter on the screen.
+function mostrarTabuada(numero) {
+    for (let i = 1; i <= 10; i++) {
+      let resultado = numero * i;
+      console.log(`${numero} x ${i} = ${resultado}`);
+    }
+  }
+  
+  // Exemplo de uso
+  let numero = 7;
+  mostrarTabuada(numero);
