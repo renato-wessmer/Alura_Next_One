@@ -9,6 +9,15 @@ let attempts = 1;
 function displayTextOnScreen(tag, text) { // Dentro do parênteses se informou os dois parâmetros comuns as váriaveis criadas com a mesma função, marcaão de texto tag, e, texto a ser substituido no HTML.
     let field = document.querySelector(tag); /* A palavra reservada document é utilizada para resgatar as tag no index.html, mas para que se resgate a tag específica utilizamos o seletor querySelector */
     field.innerHTML = text;/* Comando utilizado para iserir o texto na váriavel que criamos que será expelhado na tag alvo. */
+   // responsiveVoice.speak(text, 'Brazilian Portuguese Female', {rate:1.2});
+   if ('speechSynthesis' in window) {
+    let utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'pt-BR'; 
+    utterance.rate = 1.2; 
+    window.speechSynthesis.speak(utterance); 
+} else {
+    console.log("Web Speech API não suportada neste navegador.");
+}
 }
 
 function displayTextOnScreenInitial() {
@@ -46,7 +55,7 @@ function generateRandomNumber() {
 
     let quantityOfElementsOnList = listOfSortedNumbers.length;
 
-    If  (quantityOfElementsOnList == numberLimit) {
+    if  (quantityOfElementsOnList == numberLimit) {
         listOfSortedNumbers = [];
     }
     if (listOfSortedNumbers.includes(numberChosen)){

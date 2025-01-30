@@ -92,11 +92,8 @@ body::before {
 
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 60px; /* Reduzido de 72px para evitar cortes */
-    text-align: center;
-    padding-bottom: 1.5rem; /* Ajustado para melhor espaçamento */
-    white-space: normal; /* Permite que o texto quebre caso necessário */
-    word-wrap: break-word; /* Quebra a palavra se ultrapassar a largura */
+    font-size: 72px;
+    padding-bottom: 3rem;
 }
 
 p,
