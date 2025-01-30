@@ -42,7 +42,7 @@
 
 ## :hourglass_flowing_sand: Planejamento de Aulas
       
-|Módulo|Carga horária total (h)|Dias|Início| Término|
+|Módulo|Carga horária total (h)|Início| Término|
 | -------- |-------- |-------- |-------- |
 |Lógica de programação: mergulhe em programação com JavaScript|6|15/01/2025|19/01/2025|
 |Lógica de programação: explore funções e listas|6|20/01/2025|24/01/2025|
