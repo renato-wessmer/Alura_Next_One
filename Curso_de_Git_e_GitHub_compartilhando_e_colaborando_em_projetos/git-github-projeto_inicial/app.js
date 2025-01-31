@@ -1,6 +1,6 @@
 let listOfSortedNumbers = [];
 
-let numberLimit = 10;
+let numberLimit = 100;
 
 let numberSecret = generateRandomNumber(); // Armazena o valor criado pela função.
 
@@ -22,7 +22,7 @@ function displayTextOnScreen(tag, text) { // Dentro do parênteses se informou o
 
 function displayTextOnScreenInitial() {
     displayTextOnScreen ('h1', 'Jogo número secreto');
-    displayTextOnScreen ('p', 'Escolha um número entre 1 e 10');
+    displayTextOnScreen ('p', 'Escolha um número entre 1 e 100');
 }
 
 displayTextOnScreenInitial();
