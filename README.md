@@ -4,7 +4,7 @@
 <br>
 
 <p align="center">
-      <img src="/Imagens Geral/tech.JPG">
+      <img src="/Imagens Geral/tech.jpg">
 <p align="center">
 
 <hr>
