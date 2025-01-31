@@ -1,10 +1,6 @@
-<br>
-
 <h1 align="center">
   Início
 <h1 align="center">
-<br>
-
 <br>
 
 <p align="center">
