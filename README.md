@@ -60,7 +60,7 @@
 
 ☑️ SPRINT 2 ([Link da Pasta](https://github.com/renato-wessmer/Alura_Next_One/tree/main/Curso_de_logica_de_programacao_explore_funcoes_e_listas)): Concluído :heavy_check_mark:
 
-☑️ SPRINT 3 ([Link da Pasta]()): A fazer 
+☑️ SPRINT 3 ([Link da Pasta](https://github.com/renato-wessmer/Alura_Next_One/tree/main/Curso_de_Git_e_GitHub_compartilhando_e_colaborando_em_projetos/git-github-projeto_inicial)): Concluído :heavy_check_mark: 
 
 ☑️ SPRINT 4 ([Link da Pasta]()): A fazer 
 
@@ -75,8 +75,6 @@
 ☑️ SPRINT 9 ([Link da Pasta]()): A fazer 
 
 ☑️ SPRINT 10 ([Link da Pasta]()): A fazer 
-
-☑️ SPRINT 11 ([Link da Pasta]()): A fazer 
 
 <a href ="#pushpin-início">Voltar ao início</a>  
 <br> 
