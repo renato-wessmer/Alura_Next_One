@@ -42,7 +42,7 @@ function addFriend() {
 
 
 function updateFriendList() {
-    
+
     let friendList = document.querySelector("#listFriends");
 
     friendList.innerHTML = "";
@@ -54,22 +54,27 @@ function updateFriendList() {
     }
 }
 
+
 function drawFriend() {
 
     if (friend.length === 0) {
-        alert("Adicione nomes de seus amigos para poder sortear!");
+        alert("Adicione o nome dos seus amigos para sortear!");
         return;
     }
 
     let randomIndex = Math.floor(Math.random() * friend.length);
     let selectedFriend = friend[randomIndex];
 
-    console.log(`Amigo sorteado é ${selectedFriend}`);
+    friend.splice(randomIndex, 1);
+
+    console.log(`Amigo sorteado é : ${selectedFriend}`);
 
     let resultList = document.querySelector("#result");
-    resultList.innerHTML = ""; // Limpa o resultado anterior
+    resultList.innerHTML = ""; 
     let li = document.createElement("li");
     li.textContent = "Amigo sorteado: " + selectedFriend;
     resultList.appendChild(li);
+
+    updateFriendList();
 }
 
