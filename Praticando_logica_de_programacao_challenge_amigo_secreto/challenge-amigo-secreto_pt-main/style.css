@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 40px 0 0 100px;
 }
 
 /* Seção de entrada */
@@ -167,3 +167,146 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/*-------------------------------------------------------------------------------------------------------*/
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Ajusta o banner do cabeçalho */
+    .header-banner {
+      padding: 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    /* Diminui o tamanho do título principal */
+    .main-title {
+      font-size: 32px;
+    }
+  
+    /* Ajusta a seção de entrada */
+    .input-section {
+      padding: 20px 10px;
+      border-radius: 32px 32px 0 0;
+    }
+    
+    /* Ajusta o tamanho do título da seção */
+    .section-title {
+      font-size: 28px;
+    }
+    
+    /* Faz com que o input e o botão fiquem em coluna */
+    .input-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    /* Ajusta o input */
+    .input-name {
+      border-radius: 25px;
+      margin-bottom: 10px;
+    }
+    
+    /* Caso precise, ajuste também o botão de adicionar */
+    .button-add {
+      border-radius: 25px;
+    }
+    
+    /* Se os botões estiverem lado a lado, podemos empilhá-los */
+    .button-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    /* Diminui a fonte e o padding dos botões de sortear */
+    .button-draw {
+      font-size: 14px;
+      padding: 10px;
+      justify-content: center;
+    }
+    
+    /* Ajusta o espaçamento da imagem dentro do botão, se necessário */
+    .button-draw img {
+      margin-right: 10px;
+    }
+    
+    /* Ajusta a fonte das listas */
+    ul {
+      font-size: 16px;
+    }
+  }
+  /*-------------------------------------------------------------------------------------------------------*/
+  @media (max-width: 480px) {
+    /* Cabeçalho e títulos */
+    .header-banner {
+      padding: 10px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .header-banner img {
+        max-width: 100%;
+        height: auto;
+      }
+  
+    .main-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
+    .section-title {
+      font-size: 24px;
+      margin: 5px 0;
+    }
+    
+    /* Seção de entrada */
+    .input-section {
+      padding: 15px 5px;
+      border-radius: 20px 20px 0 0;
+    }
+    
+    /* Input e botão de adicionar */
+    .input-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .input-name {
+      font-size: 14px;
+      padding: 8px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .button-add {
+      font-size: 14px;
+      padding: 8px 20px;
+      border-radius: 20px;
+    }
+    
+    /* Botões de sorteio e reinício */
+    .button-group {
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      align-items: center;
+    }
+    
+    .button-draw {
+      font-size: 14px;
+      padding: 8px;
+      justify-content: center;
+      width: 90%;
+    }
+    
+    .button-draw img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+    
+    /* Listas */
+    ul {
+      font-size: 14px;
+    }
+  }
+  
