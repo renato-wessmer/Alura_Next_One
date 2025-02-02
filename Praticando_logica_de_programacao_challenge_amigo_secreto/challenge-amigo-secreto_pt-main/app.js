@@ -78,3 +78,11 @@ function drawFriend() {
     updateFriendList();
 }
 
+function renewGame() {
+    friend = [];
+    updateFriendList();
+    document.querySelector("#result").innerHTML = "";
+    console.log("Jogo reiniciado! A lista de amigos agora está vazia.");
+  }
+  
+  
