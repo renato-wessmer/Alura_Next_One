@@ -1,4 +1,40 @@
-body{
+body {
+    background-color: white;
+    color: black;
+
+}
+
+
+h1 {
+    color: #333333;
+
+}
+
+button {
+    background-color: green;
+    color: white;
+
+}
+
+header {
     background-color: lightblue;
-    color: blue;
-    }
+    color: white;
+
+}
+
+p {
+
+    color: darkgray;
+
+}
+
+footer {
+    background-color: gray;
+    color: white;
+
+}
+
+a {
+    color: DodgerBlue;
+
+}
