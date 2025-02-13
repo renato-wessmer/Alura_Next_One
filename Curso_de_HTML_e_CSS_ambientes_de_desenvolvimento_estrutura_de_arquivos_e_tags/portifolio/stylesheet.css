@@ -1,40 +1,8 @@
-body {
-    background-color: white;
-    color: black;
-
+body{
+    background-color: #000000;
+    color: #F6F6F6;
 }
 
-
-h1 {
-    color: #333333;
-
-}
-
-button {
-    background-color: green;
-    color: white;
-
-}
-
-header {
-    background-color: lightblue;
-    color: white;
-
-}
-
-p {
-
-    color: darkgray;
-
-}
-
-footer {
-    background-color: gray;
-    color: white;
-
-}
-
-a {
-    color: DodgerBlue;
-
+strong{
+    color: #22D4FD;
 }
