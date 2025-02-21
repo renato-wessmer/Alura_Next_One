@@ -29,12 +29,12 @@ body{
 
 .cabecalho__menu{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .cabecalho__menu__link{
     font-family: var(--secondary-fonts);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--tertiary-color);
     text-decoration: none;
@@ -55,10 +55,10 @@ body{
     justify-content: space-between;
 }
 .apresentacao__conteudo{
-    width: 615px;
+    width: 38.4375rem;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .apresentacao__conteudo__texto a{
@@ -67,12 +67,12 @@ body{
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--primary-fonts);
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--secondary-fonts);
     font-weight: 400;
 }
@@ -82,25 +82,25 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .apresentacao__links__subtitulo{
     font-family: var(--primary-fonts);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__links__link{
     display: flex;
     justify-content: center;
-    gap: 16px;
-    border: 2px solid var(--tertiary-color); 
-    width: 378px;
+    gap: 1rem;
+    border: 0.125rem solid var(--tertiary-color); 
+    width: 23.625rem;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
-    padding: 21.5px 0;
+    font-size: 1.5rem;
+    padding: 1.34375rem 0;
     text-decoration: none;
     color: var(--secondary-color);
     font-family: var(--secondary-fonts);
@@ -115,9 +115,9 @@ body{
 .rodape{
     color: var(--primary-color);
     background-color: var(--tertiary-color);
-    padding: 24px;
+    padding: 1.5rem;
     text-align: center;
     font-family: var(--secondary-fonts);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
